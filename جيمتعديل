@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>حجز اشتراك جيم</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f76c, #287949);
+            color: #fde400;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-custom {
+            max-width: 600px;
+            width: 100%;
+            background-color: rgba(58, 124, 66, 0.9);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #fde400;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 6px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            background-color: #0b3f16;
+            color: #cceef3;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #06381b;
+        }
+
+        .btn-back {
+            margin-top: 15px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+
+        .btn-back:hover {
+            color: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-custom">
+        <h3>احجز اشتراكك الآن</h3>
+
+        <form action="final.html" method="GET">
+            <label for="gym">الجيم:</label>
+            <select id="gym" name="gym" required>
+                <option value="">-- اختر الجيم --</option>
+                <option value="Power Hut - عمّان">Power Hut - عمّان</option>
+                <option value="Gold's Gym - عبدون">Gold's Gym - عبدون</option>
+                <option value="Hive Fit - عمّان">Hive Fit - عمّان</option>
+                <option value="RiseUp - عمّان">RiseUp - عمّان</option>
+                <option value="Ideal Body - عمّان">Ideal Body - عمّان</option>
+                <option value="Glory Gym - طبربور">Glory Gym - طبربور</option>
+                <option value="نادي الزرقاء الرياضي">نادي الزرقاء الرياضي</option>
+            </select>
+
+            <label for="subscription">نوع الاشتراك:</label>
+            <select id="subscription" name="subscription" required>
+                <option value="">-- اختر نوع الاشتراك --</option>
+                <option value="يومي - 5 دنانير">يومي - 5 دنانير</option>
+                <option value="شهري - 40 دينار">شهري - 40 دينار</option>
+                <option value="سنوي - 400 دينار">سنوي - 400 دينار</option>
+            </select>
+
+            <label for="startDate">تاريخ بدء الحجز:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+           <button class="btn-submit" onclick="window.location.href='final.html'">احجز الآن</button>
+        </form>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
