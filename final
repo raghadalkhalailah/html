@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>تأكيد الحجز</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f76c, #287949);
+            color: white; /* اللون الأبيض */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container-custom {
+            background-color: rgba(58, 124, 66, 0.9);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h3 {
+            color: white; /* اللون الأبيض */
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: white; /* اللون الأبيض */
+        }
+
+        .btn-back {
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+
+        .btn-back:hover {
+            color: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-custom">
+        <h3>✅ تم تأكيد حجزك</h3>
+        <p>شكرًا لاستخدامك موقعنا.<br>نتمنى لك تجربة رائعة!</p>
+
+        <button onclick="window.location.href='index.html'" class="btn-back">العودة للصفحة الرئيسية</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
