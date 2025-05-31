@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+
+  <!-- استدعاء خط Cairo من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f4f76c, #287949);
+      color: #ffe600;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .welcome {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    /* تنسيق خاص للخط الجديد */
+    .custom-welcome {
+      font-family: 'Cairo', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff200;
+    }
+
+    .form-container {
+      background-color: rgba(58, 124, 66, 0.9);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fde400;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #0b3f16;
+      color: rgb(204, 238, 243);
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-content">
+    <div class="welcome custom-welcome">
+      <b>أهلاً بك في نشاطك علينا💪🏼</b><br>
+         </div>
+
+    <div class="form-container">
+      <h2>تسجيل الدخول</h2>
+      <form action="الاختيار.html" method="get">
+        <div class="form-group">
+          <label for="name">الاسم الثلاثي</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">كلمة المرور</label>
+          <input type="password" id="password" name="password" required placeholder="اكتب كلمة مرور">
+        </div>
+
+        <input type="submit" value="دخول">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
