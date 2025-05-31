@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Vitabook</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f4f76c, #287949);
+      color: #ffe600;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #fff200;
+      text-shadow: 1px 1px 3px #444;
+    }
+
+    .box {
+      background-color: rgba(58, 124, 66, 0.9);
+      border-radius: 12px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #fde400;
+    }
+
+    .option {
+      margin: 1rem 0;
+    }
+
+    .option button {
+      background-color: #0b3f16;
+      color: rgb(204, 238, 243);
+      border: none;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .option button:hover {
+      background-color: #06381b;
+    }
+
+    .description {
+      color: #d2f4d2;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">نشاطك علينا💪🏼
+</div>
+
+  <div class="box">
+    <h2>اختر خدمتك</h2>
+
+    <div class="option">
+      <button onclick="location.href='foodafaf.html'">🍽 الأكل الصحي</button>
+      <div class="description">اطلب وجباتك الصحية  </div>
+    </div>
+
+    <div class="option">
+      <button onclick="location.href='جيمتعديل.html'">🏋 الجيم</button>
+      <div class="description">احجز اشتراكك في الجيم</div>
+    </div>
+
+    <div class="option">
+      <button onclick="location.href='ملعبب.html'">🏟 الملاعب</button>
+      <div class="description">احجز ملعبك</div>
+    </div>
+  </div>
+</body>
+</html>
