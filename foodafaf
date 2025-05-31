@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthy Food Subscription</title>
+    <meta charset="UTF-8">
+    <style>
+        .arabic-section {
+            direction: rtl;
+            text-align: center;
+        }
+
+        .english-section {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .body {
+            background: linear-gradient(135deg, #3ac45f, #c7ca30);
+            font-family: 'Arial', sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        /* تنسيق الجدول */
+        table.menu-table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 20px 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .color-th {
+            color: #116b20;
+        }
+
+        table.menu-table td {
+            vertical-align: middle;
+        }
+
+        table.menu-table input[type="number"] {
+            background-color: #116b20;
+            color: #0f561a;
+            width: 60px;
+            text-align: center;
+
+            background-color: #116b20;
+            color: white;
+
+            border-radius: 10px;
+            border: none;
+        }
+
+        /* عشان افصل بين الاقسام */
+        h3 {
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+
+        .inputnum-btn {
+            background-color: #ffffff;
+            
+            border-radius: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            
+            margin-top: 20px;
+
+            border: none;
+        }
+
+        .submit-btn {
+            background-color: #116b20;
+            color: white;
+
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .submit-btn:hover {
+            background-color: #0f561a; /* لون أغمق لما اكبس */
+            transform: scale(1.05);
+        }
+
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+
+    </style>
+</head>
+<body class="body">
+    <div class="arabic-section">
+        <h1>تفاصيل اشتراك الطعام الصحي </h1>
+        <h2><bdi>قائمة الوجبات : </bdi></h2>
+    </div>
+
+    <form action="تاكيدطلب.html" method="get">
+        <div class="english-section">
+            
+            <table class="menu-table">
+                <th class="color-th">
+                    <h3>🥗 Popular Healthy Salads : </h3>
+                </th>
+            
+                <tr>
+                    <td>
+                        <input type="checkbox" id="tabbouleh" name="menu" value="Tabbouleh Salad">
+                        <label for="tabbouleh">Tabbouleh Salad - $5</label>
+                    </td>
+                    <td>
+                        <input type="number" id="tabbouleh_qty" name="tabbouleh_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="fattoush" name="menu" value="Fattoush Salad">
+                        <label for="fattoush">Fattoush Salad - $6</label>
+                    </td>
+                    <td>
+                        <input type="number" id="fattoush_qty" name="fattoush_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="greek" name="menu" value="Greek Salad">
+                        <label for="greek">Greek Salad - $5</label>
+                    </td>
+                    <td>
+                        <input type="number" id="greek_qty" name="greek_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="quinoa" name="menu" value="Quinoa & Avocado Salad">
+                        <label for="quinoa">Quinoa & Avocado Salad - $7</label>
+                    </td>
+                    <td>
+                        <input type="number" id="quinoa_qty" name="quinoa_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="kale" name="menu" value="Kale & Chickpea Salad">
+                        <label for="kale">Kale & Chickpea Salad - $6</label>
+                    </td>
+                    <td>
+                        <input type="number" id="kale_qty" name="kale_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="spinach" name="menu" value="Spinach & Walnut Salad">
+                        <label for="spinach">Spinach & Walnut Salad - $6</label>
+                    </td>
+                    <td>
+                        <input type="number" id="spinach_qty" name="spinach_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="salmon" name="menu" value="Arugula & Smoked Salmon Salad">
+                        <label for="salmon">Arugula & Smoked Salmon Salad - $8</label>
+                    </td>
+                    <td>
+                        <input type="number" id="salmon_qty" name="salmon_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="corn" name="menu" value="Corn & Avocado Salad">
+                        <label for="corn">Corn & Avocado Salad - $5</label>
+                    </td>
+                    <td>
+                        <input type="number" id="corn_qty" name="corn_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+                <th class="color-th">
+                    <h3>🍹 Detox Drinks : </h3>
+                </th>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cucumber_mint" name="menu" value="Cucumber & Mint Detox">
+                        <label for="cucumber_mint">Cucumber & Mint Detox - $3</label>
+                    </td>
+                    <td>
+                        <input type="number" id="cucumber_mint_qty" name="cucumber_mint_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="lemon_ginger" name="menu" value="Lemon & Ginger Detox">
+                        <label for="lemon_ginger">Lemon & Ginger Detox - $4</label>
+                    </td>
+                    <td>
+                        <input type="number" id="lemon_ginger_qty" name="lemon_ginger_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="berry" name="menu" value="Berry Detox Juice">
+                        <label for="berry">Berry Detox Juice - $5</label>
+                    </td>
+                    <td>
+                        <input type="number" id="berry_qty" name="berry_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="cinnamon_honey" name="menu" value="Cinnamon & Honey Detox">
+                        <label for="cinnamon_honey">Cinnamon & Honey Detox - $4</label>
+                    </td>
+                    <td>
+                        <input type="number" id="cinnamon_honey_qty" name="cinnamon_honey_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="green_tea" name="menu" value="Green Tea Detox">
+                        <label for="green_tea">Green Tea Detox - $4</label>
+                    </td>
+                    <td>
+                        <input type="number" id="green_tea_qty" name="green_tea_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+                <th class="color-th">
+                    <h3>🍽 High-Protein & Carb Meals : </h3>
+                </th>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="grilled_chicken" name="menu" value="Grilled Chicken with Brown Rice & Vegetables">
+                        <label for="grilled_chicken">Grilled Chicken with Brown Rice & Vegetables - $10</label>
+                    </td>
+                    <td>
+                        <input type="number" id="grilled_chicken_qty" name="grilled_chicken_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="salmon_quinoa" name="menu" value="Salmon & Quinoa Bowl with Spinach">
+                        <label for="salmon_quinoa">Salmon & Quinoa Bowl with Spinach - $12</label>
+                    </td>
+                    <td>
+                        <input type="number" id="salmon_quinoa_qty" name="salmon_quinoa_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="beef_sweet_potato" name="menu" value="Lean Beef Steak with Sweet Potato">
+                        <label for="beef_sweet_potato">Lean Beef Steak with Sweet Potato - $11</label>
+                    </td>
+                    <td>
+                        <input type="number" id="beef_sweet_potato_qty" name="beef_sweet_potato_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="fish_rice" name="menu" value="Grilled Fish with Brown Rice & Vegetables">
+                        <label for="fish_rice">Grilled Fish with Brown Rice & Vegetables - $10</label>
+                    </td>
+                    <td>
+                        <input type="number" id="fish_rice_qty" name="fish_rice_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="egg_avocado" name="menu" value="Egg & Avocado on Whole-Grain Bread">
+                        <label for="egg_avocado">Egg & Avocado on Whole-Grain Bread - $7</label>
+                    </td>
+                    <td>
+                        <input type="number" id="egg_avocado_qty" name="egg_avocado_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" id="lentil_rice" name="menu" value="Cooked Lentils with Brown Rice & Olive Oil">
+                        <label for="lentil_rice">Cooked Lentils with Brown Rice & Olive Oil - $6</label>
+                    </td>
+                    <td>
+                        <input type="number" id="lentil_rice_qty" name="lentil_rice_quantity" min="0" max="50" value="0" disabled>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br><hr>
+        <div class="arabic-section">
+            <h2>معلومات التواصل:</h2>
+
+            <label><b>العنوان:</b></label><br>
+            <input type="text" name="address" placeholder="  أدخل عنوانك هنا" required class="inputnum-btn">
+            <br><br>
+
+            <label><b>رقم الهاتف:</b></label><br>
+            <input type="text" name="number" placeholder="  أدخل رقم هاتفك هنا" minlength="10" maxlength="10" required class="inputnum-btn">
+            <br><br>
+
+            <label><b>رقم هاتف احتياطي:</b></label><br>
+            <input type="text" name="number2" placeholder="  أدخل رقم هاتف آخر" minlength="10" maxlength="10" required class="inputnum-btn">
+        </div>
+
+        <br>
+        <div class="arabic-section">
+            <button type="submit" class="submit-btn">ارسال الطلب</button>
+        </div>
+    </form>
+
+    <script>
+      document.querySelectorAll('input[type="number"]').forEach(input => {
+        input.disabled = true;
+      });
+
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          const qtyInput = document.getElementById(checkbox.id + '_qty');
+          if (qtyInput) {
+            if (checkbox.checked) {
+              qtyInput.disabled = false;
+              qtyInput.value = 1;
+            } else {
+              qtyInput.disabled = true;
+              qtyInput.value = 0;
+            }
+          }
+        });
+      });
+
+      // كود جافاسكريبت للتحقق من أرقام الهاتف انهم مش نفس الرقم
+      document.querySelector('form').addEventListener('submit', function(e) {
+          const mainum = document.querySelector('input[name="number"]').value;
+          const anothernum = document.querySelector('input[name="number2"]').value;
+
+          if (mainum  === anothernum) {
+              alert("❗ الرقم الاحتياطي يجب أن يكون مختلفًا عن الرقم الأساسي.");
+              e.preventDefault(); // يمنع إرسال الطلب
+          }
+      });
+    </script>
+
+</body>
